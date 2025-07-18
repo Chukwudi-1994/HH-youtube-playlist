@@ -1,2 +1,3 @@
 chat.txt
 client_secret.json
+*.pyc
