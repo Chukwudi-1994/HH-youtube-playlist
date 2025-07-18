@@ -1,15 +1,22 @@
 from Functions.helpers import *
 
-CONFIG = load_config()
+def main():
 
-print(CONFIG['SYSTEM']['CHAT_FILE'])
+    CONFIG = load_config()
 
-youtube_links = extract_youtube_links(CONFIG)
+    print(CONFIG['SYSTEM']['CHAT_FILE'])
 
-print(youtube_links)
+    youtube_links = extract_youtube_links(CONFIG)
 
-client = authenticate_youtube(CONFIG)
+    print(youtube_links)
 
-playlist_id = create_playlist(client,CONFIG)
+    client = authenticate_youtube(CONFIG)
 
-add_videos_to_playlist(client, playlist_id, youtube_links)
+    playlist_id = create_playlist(client,CONFIG)
+
+    add_videos_to_playlist(client, playlist_id, youtube_links)
+    
+    return None
+
+if __name__ == '__main__':
+    main()
