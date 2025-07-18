@@ -1,0 +1,6 @@
+SYSTEM:
+  "CHAT_FILE": chat.txt
+  "YOUTUBE_SECRETS": client_secret.json
+PLAYLIST:
+  "PLAYLIST_TITLE": HH-2025
+  "DESCRIPTION": Tunes from Hundred Heads 2025
